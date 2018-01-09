@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://bloodcrowdservice.apphb.com/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BloodCrowdService" />
+  <xs:element name="GetDonators">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsResult" nillable="true" type="q1:ArrayOfDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsShort">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsShortResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsShortResult" nillable="true" type="q2:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNewDonator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="bd" nillable="true" type="q3:Donator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddNewDonatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddNewDonatorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoverDonator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoverDonatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RemoverDonatorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="number" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByNumberResult" nillable="true" type="q4:ArrayOfDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByNameResult" nillable="true" type="q5:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByAge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="age" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByAgeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByAgeResult" nillable="true" type="q6:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByBloodType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bloodType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByBloodTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByBloodTypeResult" nillable="true" type="q7:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByBloodTypeCompatibility">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bloodType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByBloodTypeCompatibilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByBloodTypeCompatibilityResult" nillable="true" type="q8:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByImcMenorOuIgual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByImcMenorOuIgualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByImcMenorOuIgualResult" nillable="true" type="q9:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByImcMaiorOuIgual">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="imc" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDonatorsByImcMaiorOuIgualResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BloodCrowdService" minOccurs="0" name="GetDonatorsByImcMaiorOuIgualResult" nillable="true" type="q10:ArrayOfShortDonator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcularImc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="peso" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="altura" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcularImcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CalcularImcResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
